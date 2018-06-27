@@ -10,6 +10,7 @@
 #import "NSArray+Category.h"
 #import "NSDictionary+Category.h"
 #import "NSString+Category.h"
+#import "NSDateManager.h"
 @interface ViewController ()
 
 @end
@@ -19,12 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSString* str = @"1234";
-    str = [str substringToIndex:5];
-    NSLog(@"%@", str);
-    NSString* str1 = @"234";
-    str1 = [str1 substringToIndex:5];
-    NSLog(@"%@", str1);
+
 }
 
 

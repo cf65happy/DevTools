@@ -17,6 +17,7 @@
 		A2F7A6A220E1EE18009E77CB /* NSArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F7A6A120E1EE18009E77CB /* NSArray+Category.m */; };
 		A2F7A6A820E213D0009E77CB /* NSDictionary+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F7A6A720E213D0009E77CB /* NSDictionary+Category.m */; };
 		A2F7A6AB20E21AAE009E77CB /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F7A6AA20E21AAE009E77CB /* NSString+Category.m */; };
+		A2F7A6B520E23F9B009E77CB /* NSDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F7A6B420E23F9B009E77CB /* NSDateManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		A2F7A6A720E213D0009E77CB /* NSDictionary+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Category.m"; sourceTree = "<group>"; };
 		A2F7A6A920E21AAE009E77CB /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
 		A2F7A6AA20E21AAE009E77CB /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		A2F7A6B320E23F9B009E77CB /* NSDateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDateManager.h; sourceTree = "<group>"; };
+		A2F7A6B420E23F9B009E77CB /* NSDateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDateManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 		A2F7A68420E1DA62009E77CB /* DevTools */ = {
 			isa = PBXGroup;
 			children = (
+				A2F7A6B220E23F46009E77CB /* DateTools */,
 				A2F7A69F20E1EDB3009E77CB /* Category */,
 				A2F7A69B20E1DA7D009E77CB /* Tools */,
 				A2F7A68520E1DA62009E77CB /* AppDelegate.h */,
@@ -105,6 +109,15 @@
 				A2F7A6AA20E21AAE009E77CB /* NSString+Category.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		A2F7A6B220E23F46009E77CB /* DateTools */ = {
+			isa = PBXGroup;
+			children = (
+				A2F7A6B320E23F9B009E77CB /* NSDateManager.h */,
+				A2F7A6B420E23F9B009E77CB /* NSDateManager.m */,
+			);
+			path = DateTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +194,7 @@
 				A2F7A68A20E1DA62009E77CB /* ViewController.m in Sources */,
 				A2F7A69E20E1DAB2009E77CB /* DevTools.m in Sources */,
 				A2F7A69520E1DA64009E77CB /* main.m in Sources */,
+				A2F7A6B520E23F9B009E77CB /* NSDateManager.m in Sources */,
 				A2F7A68720E1DA62009E77CB /* AppDelegate.m in Sources */,
 				A2F7A6A820E213D0009E77CB /* NSDictionary+Category.m in Sources */,
 				A2F7A6A220E1EE18009E77CB /* NSArray+Category.m in Sources */,
