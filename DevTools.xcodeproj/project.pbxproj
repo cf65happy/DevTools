@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A226A81320E37D7000C1007E /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A226A81220E37D7000C1007E /* NSObject+Category.m */; };
 		A2F7A68720E1DA62009E77CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F7A68620E1DA62009E77CB /* AppDelegate.m */; };
 		A2F7A68A20E1DA62009E77CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F7A68920E1DA62009E77CB /* ViewController.m */; };
 		A2F7A68D20E1DA62009E77CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F7A68B20E1DA62009E77CB /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A226A81120E37D7000C1007E /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		A226A81220E37D7000C1007E /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 		A2F7A68220E1DA62009E77CB /* DevTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F7A68520E1DA62009E77CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2F7A68620E1DA62009E77CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 		A2F7A69F20E1EDB3009E77CB /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A226A81120E37D7000C1007E /* NSObject+Category.h */,
+				A226A81220E37D7000C1007E /* NSObject+Category.m */,
 				A2F7A6A020E1EE18009E77CB /* NSArray+Category.h */,
 				A2F7A6A120E1EE18009E77CB /* NSArray+Category.m */,
 				A2F7A6A620E213D0009E77CB /* NSDictionary+Category.h */,
@@ -195,6 +200,7 @@
 				A2F7A69E20E1DAB2009E77CB /* DevTools.m in Sources */,
 				A2F7A69520E1DA64009E77CB /* main.m in Sources */,
 				A2F7A6B520E23F9B009E77CB /* NSDateManager.m in Sources */,
+				A226A81320E37D7000C1007E /* NSObject+Category.m in Sources */,
 				A2F7A68720E1DA62009E77CB /* AppDelegate.m in Sources */,
 				A2F7A6A820E213D0009E77CB /* NSDictionary+Category.m in Sources */,
 				A2F7A6A220E1EE18009E77CB /* NSArray+Category.m in Sources */,

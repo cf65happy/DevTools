@@ -20,7 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    
+    NSDictionary* dict = @{@"id":@"123",@"name":@"zhangsan",@"sex":@1,@"age":@20};
+    [dict propertyCode];
 }
 
 

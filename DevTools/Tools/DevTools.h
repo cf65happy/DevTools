@@ -16,5 +16,4 @@
 + (BOOL)checkMobile:(NSString *)mobile;
 
 
-
 @end

@@ -11,4 +11,15 @@
 #import <objc/message.h>
 @interface NSString (Category)
 
+/**
+ * MD5
+ */
+-(NSString*)MD5;
+
+/**
+ * 去首尾空格
+ */
+-(NSString*)trim;
+
+
 @end

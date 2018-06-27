@@ -11,4 +11,9 @@
 #import <objc/message.h>
 @interface NSDictionary (Category)
 
+/**
+ * json对应key，打印出来复制粘贴即可把接口返回转化为model
+ */
+- (void)propertyCode;
+
 @end

@@ -112,7 +112,7 @@
         NSLog(@"非法添加");
         return self;
     }else {
-        return [self arrayByAddingObject:anObject];
+        return [self arrayByAddingNoNilObject:anObject];
     }
 }
 
