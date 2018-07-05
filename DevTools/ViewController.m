@@ -7,11 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NSArray+Category.h"
-#import "NSDictionary+Category.h"
-#import "NSString+Category.h"
-#import "NSDateManager.h"
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -23,8 +19,26 @@
     
     NSDictionary* dict = @{@"id":@"123",@"name":@"zhangsan",@"sex":@1,@"age":@20};
     [dict propertyCode];
+    [DevTools setSysVolumWith:1.0];
+    NSLog(@"%.2f", [DevTools getSystemVolumValue]);
+    UITableView* tableView = CreateTableView(self);
+    tableView.frame = self.view.bounds;
+    [self.view addSubview: tableView];
+    NSLog(@"%.2f", KNavBarHeight);
+    TableViewZeroFooter(tableView);
+    TableViewSepartor(tableView, 1);
+    NSLog(@"%@", APP_COPYRIGHT(@"大黑狗"));
 }
 
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 5;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell* cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    cell.textLabel.text = @"111";
+    return cell;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

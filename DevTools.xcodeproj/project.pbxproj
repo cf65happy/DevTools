@@ -24,6 +24,8 @@
 /* Begin PBXFileReference section */
 		A226A81120E37D7000C1007E /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
 		A226A81220E37D7000C1007E /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		A226A81420E3895E00C1007E /* DevTools.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevTools.pch; sourceTree = "<group>"; };
+		A226A81520E389EA00C1007E /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		A2F7A68220E1DA62009E77CB /* DevTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F7A68520E1DA62009E77CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2F7A68620E1DA62009E77CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				A2F7A69020E1DA64009E77CB /* LaunchScreen.storyboard */,
 				A2F7A69320E1DA64009E77CB /* Info.plist */,
 				A2F7A69420E1DA64009E77CB /* main.m */,
+				A226A81420E3895E00C1007E /* DevTools.pch */,
 			);
 			path = DevTools;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 		A2F7A69B20E1DA7D009E77CB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A226A81520E389EA00C1007E /* Constant.h */,
 				A2F7A69C20E1DAB2009E77CB /* DevTools.h */,
 				A2F7A69D20E1DAB2009E77CB /* DevTools.m */,
 			);
@@ -345,7 +349,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ZHPBZZY7U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Devtools/DevTools.pch";
 				INFOPLIST_FILE = DevTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,7 +368,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ZHPBZZY7U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Devtools/DevTools.pch";
 				INFOPLIST_FILE = DevTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

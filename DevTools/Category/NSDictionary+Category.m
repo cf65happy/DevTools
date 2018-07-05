@@ -17,6 +17,7 @@
     // 属性跟字典的key一一对应
     NSMutableString *codes = [NSMutableString string];
     // 遍历字典中所有key取出来
+    [codes appendString:@"\n************复制下面的内容************\n"];
     [self enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         // key:属性名
         NSString *code;
@@ -35,9 +36,9 @@
         [codes appendFormat:@"\n%@\n",code];
         
     }];
-    
+    [codes appendString:@"\n************************************\n"];
     NSLog(@"%@",codes);
-    
+
 }
 
 
