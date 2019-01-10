@@ -50,5 +50,10 @@ typedef NS_ENUM(NSInteger, iPhoneType) {
  */
 + (iPhoneType)phoneType;
 
+/**
+ * 截屏
+ */
++(UIImage *)captureImageInView:(UIView *)view;
+
 
 @end

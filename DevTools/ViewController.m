@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @end
@@ -15,21 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    NSDictionary* dict = @{@"id":@"123",@"name":@"zhangsan",@"sex":@1,@"age":@20};
-    [dict propertyCode];
-    [DevTools setSysVolumWith:1.0];
-    NSLog(@"%.2f", [DevTools getSystemVolumValue]);
-    UITableView* tableView = CreateTableView(self);
-    tableView.frame = self.view.bounds;
-    [self.view addSubview: tableView];
-    NSLog(@"%.2f", KNavBarHeight);
-    TableViewZeroFooter(tableView);
-    TableViewSepartor(tableView, 1);
-    NSLog(@"%@", APP_COPYRIGHT(@"大黑狗"));
+    //testbuttonclickcount
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    button.backgroundColor = [UIColor redColor];
+    [self.view addSubview:button];
+    button.clickCount = 0;
+    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
 }
-
+- (void)buttonClick:(UIButton *)sender {
+    sender.clickCount ++ ;
+    NSLog(@"%ld", sender.clickCount);
+}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 5;

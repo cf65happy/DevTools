@@ -17,6 +17,7 @@
 #import "NSString+Category.h"
 #import "NSDateManager.h"
 #import "DevTools.h"
+#import "UIButton+Category.h"
 
 
 #endif /* DevTools_pch */
